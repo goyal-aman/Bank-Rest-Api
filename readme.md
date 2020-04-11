@@ -8,7 +8,7 @@ Setup project environment with [virtualenv](https://virtualenv.pypa.io) and [pip
 ```bash
 $ python -m venv venv
 $ . venv/bin/activate
-$ git clone https://github.com/goyal-aman/Banks-Rest-Api.git
+$ git clone https://github.com/goyal-aman/Bank-Rest-Api.git
 $ cd Banks-Rest-Api
 $ pip install -r requirements.txt
 $ python manage.py makemigrations
@@ -23,6 +23,14 @@ $ python manage.py runserver
 * Get all branches using CITY and BANK : `<local_ip>/api/branch/` **`<bank_name>`/`<city_name>`**
 * Enter Ifsc code, bank name and city name in place of `<ifsc_code>` , `<bank_name>`, `<city_name>`
 
+## Usage
+#### Example
+* ifsc : [https://tranquil-anchorage-39635.herokuapp.com/api/ifsc/__ZCBL0000003__](https://tranquil-anchorage-39635.herokuapp.com/api/ifsc/ZCBL0000003)
+
+* City name and Bank anme : [https://tranquil-anchorage-39635.herokuapp.com/api/branch/__Axis Bank__/__Delhi__](https://tranquil-anchorage-39635.herokuapp.com/api/branch/Axis%20Bank/Delhi)
+
 ## Contributing
 
 I love contributions, so please feel free to fix bugs, improve things, provide documentation. Just send a pull request.
+
+
