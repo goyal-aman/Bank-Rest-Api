@@ -8,7 +8,7 @@ Setup project environment with [virtualenv](https://virtualenv.pypa.io) and [pip
 ```bash
 $ python -m venv venv
 $ . venv/bin/activate
-$ git clone https://github.com/goyal-aman/Banks-Rest-Api.git
+$ git clone https://github.com/goyal-aman/Bank-Rest-Api.git
 $ cd Banks-Rest-Api
 $ pip install -r requirements.txt
 $ python manage.py makemigrations
