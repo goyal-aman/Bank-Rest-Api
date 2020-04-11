@@ -9,18 +9,18 @@ from rest_framework.views import APIView
 
 
 
+
 # Create your views here.
 class IfscView(APIView):
-    ''' 
-    return response for query ./api/ifsc/{ifsc} 
+    # ''' 
+    # return response for query ./api/ifsc/{ifsc} 
 
-    @algorith:
-        if branch_with_ifsc exist:
-            return branch json respone
-        else:
-            404 error
-    '''
-    
+    # @algorith:
+    #     if branch_with_ifsc exist:
+    #         return branch json respone
+    #     else:
+    #         404 error
+    # '''
     def get_object(self, ifsc):
         try:
             branch = Branch.objects.get(ifsc=ifsc)
@@ -34,15 +34,15 @@ class IfscView(APIView):
         return Response(serializer.data)
 
 class CityBankNameView(APIView):
-    '''
-    return: respone for query on endpoint ./api/branch/{bank_name}/}{city_name}
-
-    if branch in CITY of BANK exist:
-        return all matching query
-    else:
-        return 404
-
-    '''
+    # '''
+    # return: respone for query on endpoint ./api/branch/{bank_name}/}{city_name}
+    # 
+    # if branch in CITY of BANK exist:
+        # return all matching query
+    # else:
+    #   return 404
+    #    
+    # '''
     def get_object(self, bank_name, city_name):
         try:
             branches = Branch.objects.filter(bank__name__icontains=bank_name, city__icontains=city_name)
