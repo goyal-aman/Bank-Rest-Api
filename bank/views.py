@@ -2,6 +2,7 @@ from .models import Bank, Branch
 from .serializers import BankSerializer, BranchSerializer
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 from rest_framework.response import Response
 from rest_framework import status
@@ -11,15 +12,18 @@ from rest_framework.views import APIView
 
 
 # Create your views here.
+def home(request):
+    return render(request, 'bank/home.html')
+
+
 class IfscView(APIView):
     # ''' 
     # return response for query ./api/ifsc/{ifsc} 
-
-    # @algorith:
-    #     if branch_with_ifsc exist:
-    #         return branch json respone
-    #     else:
-    #         404 error
+    #
+    #  if branch_with_ifsc exist:
+    #        return branch json respone
+    #   else:
+    #        404 error
     # '''
     def get_object(self, ifsc):
         try:

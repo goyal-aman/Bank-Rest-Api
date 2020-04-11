@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--Converted via md-to-html-->
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Bank-Rest-Api</title>
+
+</head>
+
+<body style="margin-top: 4; margin-bottom: 4;">
+
+    <div class="container mt-4">
+        <h1>
+            Banks-Rest-Api
+        </h1>
+        <p>
+            Django Rest Api for Accessing Bank Details based on IFSC Code , Bank name or City name
+        </p>
+        <hr>
+        <h2>
+            Usage
+        </h2>
+        <h6>
+            Example
+        </h6>
+        <ul>
+            <li>
+                <b>
+                    ifsc :
+                </b>
+                <a href="https://tranquil-anchorage-39635.herokuapp.com/api/ifsc/ZCBL0000003">
+                    https://tranquil-anchorage-39635.herokuapp.com/api/ifsc/
+                    <strong>
+                        ZCBL0000003
+                    </strong>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <b>
+                    City name and Bank name :
+                </b>
+                <a href="https://tranquil-anchorage-39635.herokuapp.com/api/branch/Axis%20Bank/Delhi">
+                    https://tranquil-anchorage-39635.herokuapp.com/api/branch/
+                    <strong>
+                        Axis Bank
+                    </strong>
+                    /
+                    <strong>
+                        Delhi
+                    </strong>
+                </a>
+            </li>
+        </ul>
+        <hr>
+
+        <h2>
+            Getting Started
+        </h2>
+        <p>
+            Setup project environment with
+            <a href="https://virtualenv.pypa.io">
+                virtualenv
+            </a>
+            and
+            <a href="https://pip.pypa.io">
+                pip
+            </a>
+            .
+        </p><code>
+        <p>
+            $ python -m venv venv
+        </p>
+        <p>
+            $ . venv/bin/activate
+        </p>
+        <p>
+            $ git clone
+            <a href="https://github.com/goyal-aman/Bank-Rest-Api.git">
+                https://github.com/goyal-aman/Bank-Rest-Api.git
+            </a>
+        </p>
+        <p>
+            $ cd Banks-Rest-Api
+        </p>
+        <p>
+            $ pip install -r requirements.txt
+        </p>
+        <p>
+            $ python manage.py makemigrations
+        </p>
+        <p>
+            $ python manage.py migrate
+        </p>
+        <p>
+            $ python manage.py runserver
+        </p>
+    </code>
+        <hr>
+        <h2>
+            Features
+        </h2>
+        <ul>
+            <li>
+                Get Branch Details using IFSC CODE :
+                <code>
+     &lt;local_ip&gt;/api/ifsc/
+    </code>
+                <strong>
+                    <code>
+      &lt;ifsc_code&gt;
+     </code>
+                </strong>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Get all branches using CITY and BANK :
+                <code>
+     &lt;local_ip&gt;/api/branch/
+    </code>
+                <strong>
+                    <code>
+      &lt;bank_name&gt;
+     </code>
+                    /
+                    <code>
+      &lt;city_name&gt;
+     </code>
+                </strong>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Enter Ifsc code, bank name and city name in place of
+                <code>
+     &lt;ifsc_code&gt;
+    </code>
+                ,
+                <code>
+     &lt;bank_name&gt;
+    </code>
+                ,
+                <code>
+     &lt;city_name&gt;
+    </code>
+            </li>
+        </ul>
+        <hr>
+        <h2>
+            Contributing
+        </h2>
+        <p>
+            I love contributions, so please feel free to fix bugs, improve things, provide documentation. Just send a
+            pull
+            request.
+        </p>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
